@@ -11,7 +11,7 @@
 - 视图（View）： 专注页面布局和数据显示，如界面的显示
 - 控制器（Controller）：连接模型和视图，如把视图的请求发送给模型
 
-![mvc](https://github.com/smile-sxl/MVPModuleDemo/image/mvc.png)
+![mvc](https://github.com/smile-sxl/MVPModuleDemo/blob/master/image/mvc.png)
 
 MVC实现了视图和模型的分离，避免了视图和模型糅合在一起，当视图改变的时候只要业务逻辑没变不需要改变模型；但是它有一个缺点缺点是因为MVC中的控制器并不能直接更新视图，所以MVC并不能实现视图和模型的完全分离，视图依然依赖模型的数据（数据结构）来显示，也就是说视图依赖模型。
 
@@ -21,7 +21,7 @@ MVC实现了视图和模型的分离，避免了视图和模型糅合在一起�
 - 视图（View）：专注页面布局和数据显示，如界面的显示
 - 展示器（Presenter）：连接模型和视图，处理视图的请求并根据模型更新视图，将模型和视图进行分离了，所有的交互都发生在Persenter 内部。
 
-![mvc](https://github.com/smile-sxl/MVPModuleDemo/image/mvp.png)
+![mvc](https://github.com/smile-sxl/MVPModuleDemo/blob/master/image/mvp.png)
 
 MVP用展示器代替了控制器，而展示器是可以直接更新视图，所以MVP中展示器可以处理视图的请求并递送到模型又可以根据模型的变化更新视图，实现了视图和模型的完全分离。
 
@@ -31,7 +31,7 @@ MVP用展示器代替了控制器，而展示器是可以直接更新视图，�
 - 视图（View）：专注页面布局和数据显示，如界面的显示
 - 视图模型（ViewModel）：连接模型和视图，也是将模型和视图进行了分离，但视图模型和视图是双向绑定的，当视图发生变化的时候视图模型也会发生改变，当视图模型变化的时候视图也随之变化。
 
-![mvc](https://github.com/smile-sxl/MVPModuleDemo/image/mvvm.png)
+![mvc](https://github.com/smile-sxl/MVPModuleDemo/blob/master/image/mvvm.png)
 
 MVVM用视图模型代替了MVP中的展示器，视图模型和视图实现了双向绑定，当视图发生变化的时候视图模型也会发生改变，当视图模型变化的时候视图也随之变化。
 
@@ -55,23 +55,23 @@ MVVM用视图模型代替了MVP中的展示器，视图模型和视图实现了�
 
 **Demo 小例子：通过MVP模式实现登录效果，效果看下图：**
 
-![](https://github.com/smile-sxl/MVPModuleDemo/image/login.gif)
+![](https://github.com/smile-sxl/MVPModuleDemo/blob/master/image/login.gif)
 
 #### 一、安装MVPHelper插件
 
 MVPHelper是一款适用于 `Intellij IDEA` 和 `Android Studio` 的插件, 可用于为 MVP 架构生成接口以及实现类。在 **Android Studio**  中`Setting` 窗口的 `Plugins `选项搜索 `MVPHelper` 安装即可，具体可看下图。
 
-![mvc](https://github.com/smile-sxl/MVPModuleDemo/image/mvphelper.jpg)
+![mvc](https://github.com/smile-sxl/MVPModuleDemo/blob/master/image/mvphelper.jpg)
 
 #### 二、使用MVPHelper 快速创建MVP 
 
 首先在包下创建一个 presenter 空文件夹，然后创建一个LoginPresenter 的类，在类中使用MVPHelper 插件生成接口以及实现类。具体看下图：
 
-![mvchelper](https://github.com/smile-sxl/MVPModuleDemo/image/mvphelper.gif)
+![mvchelper](https://github.com/smile-sxl/MVPModuleDemo/blob/master/image/mvphelper.gif)
 
 创建成功后会生成如下目录结构：
 
-![](https://github.com/smile-sxl/MVPModuleDemo/image/jiegou.jpg)
+![](https://github.com/smile-sxl/MVPModuleDemo/blob/master/image/jiegou.jpg)
 
 #### 三、根据生成的MVP目录结构去拆分登录这个过程
 
